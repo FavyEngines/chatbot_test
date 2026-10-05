@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FavyEngines Chat</title>
+</head>
+<body>
+<script>
+window.ChatWidgetConfig = {
+  webhook: {
+    url: 'https://milestonify.app.n8n.cloud/webhook/039cf66c-8c9f-4134-bd5f-d1da2fdee73e/chat',
+    route: 'general'
+  },
+  branding: {
+    logo: 'https://i.postimg.cc/JzmtZXTv/d44ad3b4-7d28-45b5-9efb-48dd6486f8cb.jpg',
+    name: 'FavyEngines',
+    welcomeText: 'Hi 👋, how can we help?',
+    responseTimeText: 'We usually respond right away'
+  },
+  style: {
+    primaryColor: '#54dde4',
+    secondaryColor: '#172565',
+    position: 'right',
+    backgroundColor: '#ffffff',
+    fontColor: '#333333'
+  }
+};
+
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js';
+document.body.appendChild(script);
+</script>
+</body>
+</html>
